@@ -6,10 +6,13 @@ int main() {
     int l;
     int b;
 
-    cout << "Enter the length and bredth:  ";
-    cin>>l>>b;
+    cout << "Enter the length:  ";
+    cin>>l;
 
-    double h = sqrt((l*l) + (b*b));
+    cout << "Enter the bredth:  ";
+    cin>>b;
+
+    double h = sqrt(pow(l, 2) + pow(b, 2));
     cout << "the hypotenuse of the right-angled triangle is " << h << "cm";
     return 0;
 }
